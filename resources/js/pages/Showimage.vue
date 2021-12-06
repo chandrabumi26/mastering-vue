@@ -1,6 +1,7 @@
 <template>
     <div class="img-page-container m-2 rounded">
-        <img v-for="(dataImage, index) in dataImages.slice(0,1)" v-bind:key="index" src="" height="auto" width="auto">
+        <img v-for="(dataImage, index) in dataImages.slice(0,1)" v-bind:key="index" :src=dataImage.url height="300" width="300">
+        <!-- <div img v-for="(dataImage, index) in dataImages.slice(0,1)" v-bind:key="index">{{dataImage.title}}</div> -->
     </div>
 </template>
 <script>
@@ -16,7 +17,7 @@ export default {
         }
     },
     mounted(){
-        axios.get('https://api.imgflip.com/get_memes').then(Response=>(this.dataImages = Response.data.data.memes))
+        axios.get('https://jsonplaceholder.typicode.com/albums/1/photos').then(Response=>(this.dataImages = Response.data))
     }
 }
 </script>
