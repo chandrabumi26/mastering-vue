@@ -18,6 +18,7 @@ import Dragdroppages from './pages/Dragdrop'
 import News from './pages/News'
 import Ticketpages from './pages/Ticket'
 import Showimage from './pages/Showimage'
+import Validationpages from './pages/Validation'
 // /Pages
 import Vue from 'vue'
 import VueRouter from 'vue-router'
@@ -49,6 +50,11 @@ const router = new VueRouter({
             path : '/showimg',
             name : 'showimg',
             component : Showimage
+        },
+        {
+            path : '/validation',
+            name : 'validation',
+            component : Validationpages
         }
     ]
 
