@@ -30,6 +30,7 @@
         "install": "^0.13.0",
         "npm": "^8.1.4",
         "vue-axios": "^3.4.0",
-        "vue-router": "^3.5.3"
+        "vue-router": "^3.5.3",
+        "vuelidate": "^0.7.6"
     }
 }
