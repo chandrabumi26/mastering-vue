@@ -19,6 +19,7 @@ import News from './pages/News'
 import Ticketpages from './pages/Ticket'
 import Showimage from './pages/Showimage'
 import Validationpages from './pages/Validation'
+import Spinnerpages from './pages/Spinner'
 // /Pages
 import Vue from 'vue'
 import VueRouter from 'vue-router'
@@ -55,6 +56,11 @@ const router = new VueRouter({
             path : '/validation',
             name : 'validation',
             component : Validationpages
+        },
+        {
+            path : '/spinner',
+            name : 'spinner',
+            component : Spinnerpages
         }
     ]
 

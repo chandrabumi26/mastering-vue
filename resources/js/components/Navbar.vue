@@ -16,6 +16,9 @@
             <li class="list-group-item">
                 <router-link :to="{name : 'validation'}">Validation</router-link>
             </li>
+            <li class="list-group-item">
+                <router-link :to="{name : 'spinner'}">Spinner</router-link>
+            </li>
         </ul>
     </div>
 </template>
